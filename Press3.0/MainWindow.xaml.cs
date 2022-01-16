@@ -9,7 +9,7 @@ namespace Press3._0
     /// </summary>
     public partial class MainWindow : Window
     {
-        cx _db;
+        private cx _db;
         public MainWindow()
         {
             InitializeComponent();
