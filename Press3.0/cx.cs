@@ -5,7 +5,7 @@ namespace Press3._0
 {
     public class cx : DbContext
     {
-        public DbSet<Hlass> Main { get; set; }
+        public DbSet<Hlass>? Main { get; set; }
         //public cx()
         //    : base("name=PressureEntities")
         //{

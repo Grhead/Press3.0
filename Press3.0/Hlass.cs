@@ -8,7 +8,7 @@ namespace Press3._0
         public DateTime DateandTime { get; set; }
         public int UpPressure { get; set; }
         public int DownPressure { get; set; }
-        public string Comment { get; set; }
+        public string? Comment { get; set; }
         public Hlass() { }
 
         public Hlass(DateTime DateandTime, int UpPressure, int DownPressure, string Comment)
