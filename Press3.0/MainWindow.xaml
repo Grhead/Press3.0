@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Press3._0"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Press3.0" Height="450" Width="800">
     <Grid Background="CadetBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -16,10 +16,42 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBox x:Name="Up" Grid.Row="0" Grid.Column="0" Margin="25 25 25 25" FontSize="72" FlowDirection="RightToLeft"></TextBox>
-        <TextBox x:Name="Down" Grid.Row="1" Grid.Column="0" Margin="125 25 25 25" FontSize="72" FlowDirection="RightToLeft"></TextBox>
-        <TextBox x:Name="Commentx" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Margin="55 25 55 25" FontSize="16" FontFamily="Times New Roman"></TextBox>
-        <Button x:Name="Send" Click="Send_Click" Content="Отправить" Grid.Row ="2" Grid.Column="1" Margin="80 35 80 35" FontSize="24" FontFamily="Arial Bold"></Button>
+        <TextBox x:Name="Up" 
+                 Grid.Row="0" 
+                 Grid.Column="0" 
+                 Margin="25 25 25 25" 
+                 FontSize="72" 
+                 FlowDirection="RightToLeft">
+            
+        </TextBox>
+        <TextBox x:Name="Down" 
+                 Grid.Row="1" 
+                 Grid.Column="0" 
+                 Margin="125 25 25 25" 
+                 FontSize="72" 
+                 FlowDirection="RightToLeft">
+            
+        </TextBox>
+        <TextBox x:Name="Commentx" 
+                 Grid.Row="0" 
+                 Grid.Column="1" 
+                 Grid.RowSpan="2" 
+                 Margin="55 25 55 25" 
+                 FontSize="16" 
+                 FontFamily="Times New Roman"
+                 TextWrapping="Wrap">
+                 
+
+        </TextBox>
+        <Button x:Name="Send" 
+                Click="Send_Click" 
+                Content="Отправить" 
+                Grid.Row ="2" 
+                Grid.Column="1" 
+                Margin="80 35 80 35" 
+                FontSize="24" 
+                FontFamily="Arial Bold">
+        </Button>
         <Label Name="lblTime" Grid.Row ="2" Grid.Column="0" Background="BlueViolet" Margin="70 25 25 25" FontSize="64" Foreground="White" Padding="30 3 0 0"></Label>
     </Grid>
 </Window>
