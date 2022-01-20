@@ -34,15 +34,22 @@
         </TextBox>
         <TextBox x:Name="Commentx" 
                  Grid.Row="0" 
-                 Grid.Column="1" 
-                 Grid.RowSpan="2" 
-                 Margin="55 25 55 25" 
+                 Grid.Column="1"
+                 Grid.RowSpan="2"
+                 Margin="55 10 55 90" 
                  FontSize="16" 
                  FontFamily="Times New Roman"
                  TextWrapping="Wrap">
-                 
-
         </TextBox>
+        <CheckBox x:Name="Handx"
+                  Grid.Column="1" 
+                  Grid.Row="1" 
+                  Background="AntiqueWhite" 
+                  HorizontalAlignment="Center" 
+                  VerticalAlignment="Center" 
+                  Margin="0 50 0 0"
+                  Checked="Handx_sd">
+        </CheckBox>
         <Button x:Name="Send" 
                 Click="Send_Click" 
                 Content="Отправить" 
@@ -52,6 +59,6 @@
                 FontSize="24" 
                 FontFamily="Arial Bold">
         </Button>
-        <Label Name="lblTime" Grid.Row ="2" Grid.Column="0" Background="BlueViolet" Margin="70 25 25 25" FontSize="64" Foreground="White" Padding="30 3 0 0"></Label>
+        <Label Name="LblTime" Grid.Row ="2" Grid.Column="0" Background="BlueViolet" Margin="70 25 25 25" FontSize="64" Foreground="White" Padding="30 3 0 0"></Label>
     </Grid>
 </Window>

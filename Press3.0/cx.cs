@@ -3,16 +3,10 @@ using System.Configuration;
 
 namespace Press3._0
 {
-    public class cx : DbContext
+    public class Cx : DbContext
     {
         public DbSet<Hlass>? Main { get; set; }
-        //public cx()
-        //    : base("name=PressureEntities")
-        //{
-        //}
-        public cx()
-        {
-        }
+        public Cx(){ }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
