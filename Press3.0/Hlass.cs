@@ -20,5 +20,7 @@ namespace Press3._0
             this.Comment = comment;
             this.Hand = hand;
         }
+
+
     }
 }

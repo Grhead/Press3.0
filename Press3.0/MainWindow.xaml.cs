@@ -27,22 +27,23 @@ public partial class MainWindow
 
     private void Handx_sd(object sender, RoutedEventArgs e)
     {
-        Sobutie();
+        if (Deffense.Content == "true")
+        {
+            Deffense.Content = "false";
+        }
+        else
+        {
+            Deffense.Content = "true";
+        }
+        
     }
-
-    private static bool Sobutie()
-    {
-        var handx = true;
-        return handx;
-    }
-
     private void Send_Click(object sender, RoutedEventArgs e)
     {
         var dateandTime = DateTime.Now;
         var upPressure = Convert.ToInt32(Up.Text);
         var downPressure = Convert.ToInt32(Down.Text);
         var comment = Commentx.Text;
-        var hand = Sobutie();
+        var hand = Convert.ToBoolean(Deffense.Content);
         var sd = new Hlass(dateandTime, upPressure, downPressure, comment, hand);
         _db.Main.Add(sd);
         _db.SaveChanges();

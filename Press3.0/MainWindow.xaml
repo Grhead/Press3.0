@@ -50,6 +50,17 @@
                   Margin="0 50 0 0"
                   Checked="Handx_sd">
         </CheckBox>
+        <Label x:Name="Deffense" 
+                   Grid.Row="1" 
+                   Grid.Column="1"
+                   VerticalAlignment="Center"
+                   Foreground="White"
+                   FontFamily="Arial Bold"
+                   FontSize="20"
+                   Margin="220 50 0 0"
+                   Content="false">
+
+        </Label>
         <Button x:Name="Send" 
                 Click="Send_Click" 
                 Content="Отправить" 
@@ -59,6 +70,14 @@
                 FontSize="24" 
                 FontFamily="Arial Bold">
         </Button>
-        <Label Name="LblTime" Grid.Row ="2" Grid.Column="0" Background="BlueViolet" Margin="70 25 25 25" FontSize="64" Foreground="White" Padding="30 3 0 0"></Label>
+        <Label Name="LblTime" 
+               Grid.Row ="2" 
+               Grid.Column="0" 
+               Background="BlueViolet" 
+               Margin="70 25 25 25" 
+               FontSize="64" 
+               Foreground="White" 
+               Padding="30 3 0 0">
+        </Label>
     </Grid>
 </Window>
